@@ -10,9 +10,19 @@
 		9089E78E2A07281300A83580 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9089E78D2A07281300A83580 /* AppDelegate.swift */; };
 		9089E7902A07281300A83580 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9089E78F2A07281300A83580 /* SceneDelegate.swift */; };
 		9089E7922A07281300A83580 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9089E7912A07281300A83580 /* ViewController.swift */; };
-		9089E7952A07281300A83580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9089E7932A07281300A83580 /* Main.storyboard */; };
 		9089E7972A07281400A83580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9089E7962A07281400A83580 /* Assets.xcassets */; };
 		9089E79A2A07281400A83580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9089E7982A07281400A83580 /* LaunchScreen.storyboard */; };
+		9089E7BA2A072B8200A83580 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9089E7AA2A072B8200A83580 /* DataTransferService.swift */; };
+		9089E7BB2A072B8200A83580 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9089E7AB2A072B8200A83580 /* NetworkService.swift */; };
+		9089E7BC2A072B8200A83580 /* BodyEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9089E7AD2A072B8200A83580 /* BodyEncoding.swift */; };
+		9089E7BD2A072B8200A83580 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9089E7AE2A072B8200A83580 /* Requestable.swift */; };
+		9089E7BE2A072B8200A83580 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9089E7AF2A072B8200A83580 /* HTTPMethod.swift */; };
+		9089E7BF2A072B8200A83580 /* ResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9089E7B02A072B8200A83580 /* ResponseDecoder.swift */; };
+		9089E7C02A072B8200A83580 /* APIDataNetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9089E7B12A072B8200A83580 /* APIDataNetworkConfiguration.swift */; };
+		9089E7C12A072B8200A83580 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9089E7B22A072B8200A83580 /* Endpoint.swift */; };
+		9089E7C22A072B8200A83580 /* NetworkSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9089E7B32A072B8200A83580 /* NetworkSessionManager.swift */; };
+		9089E7C32A072B8200A83580 /* DataTransferError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9089E7B52A072B8200A83580 /* DataTransferError.swift */; };
+		9089E7C42A072B8200A83580 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9089E7B62A072B8200A83580 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +30,20 @@
 		9089E78D2A07281300A83580 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9089E78F2A07281300A83580 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9089E7912A07281300A83580 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9089E7942A07281300A83580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9089E7962A07281400A83580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9089E7992A07281400A83580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9089E79B2A07281400A83580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9089E7AA2A072B8200A83580 /* DataTransferService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
+		9089E7AB2A072B8200A83580 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		9089E7AD2A072B8200A83580 /* BodyEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyEncoding.swift; sourceTree = "<group>"; };
+		9089E7AE2A072B8200A83580 /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
+		9089E7AF2A072B8200A83580 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		9089E7B02A072B8200A83580 /* ResponseDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseDecoder.swift; sourceTree = "<group>"; };
+		9089E7B12A072B8200A83580 /* APIDataNetworkConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDataNetworkConfiguration.swift; sourceTree = "<group>"; };
+		9089E7B22A072B8200A83580 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		9089E7B32A072B8200A83580 /* NetworkSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSessionManager.swift; sourceTree = "<group>"; };
+		9089E7B52A072B8200A83580 /* DataTransferError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTransferError.swift; sourceTree = "<group>"; };
+		9089E7B62A072B8200A83580 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +76,106 @@
 		9089E78C2A07281300A83580 /* CalendarApp */ = {
 			isa = PBXGroup;
 			children = (
-				9089E78D2A07281300A83580 /* AppDelegate.swift */,
-				9089E78F2A07281300A83580 /* SceneDelegate.swift */,
-				9089E7912A07281300A83580 /* ViewController.swift */,
-				9089E7932A07281300A83580 /* Main.storyboard */,
+				9089E7A22A072A9C00A83580 /* Application */,
+				9089E7A32A072AA800A83580 /* Presentation */,
+				9089E7A52A072AB900A83580 /* Domain */,
+				9089E7A42A072AB400A83580 /* Data */,
+				9089E7A82A072B8200A83580 /* Infrastructure */,
+				9089E7A12A072A0800A83580 /* Resources */,
+			);
+			path = CalendarApp;
+			sourceTree = "<group>";
+		};
+		9089E7A12A072A0800A83580 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				9089E7962A07281400A83580 /* Assets.xcassets */,
 				9089E7982A07281400A83580 /* LaunchScreen.storyboard */,
 				9089E79B2A07281400A83580 /* Info.plist */,
 			);
-			path = CalendarApp;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9089E7A22A072A9C00A83580 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9089E78D2A07281300A83580 /* AppDelegate.swift */,
+				9089E78F2A07281300A83580 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9089E7A32A072AA800A83580 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9089E7912A07281300A83580 /* ViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		9089E7A42A072AB400A83580 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9089E7A52A072AB900A83580 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		9089E7A82A072B8200A83580 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				9089E7A92A072B8200A83580 /* Network */,
+				9089E7B72A072B8200A83580 /* Repositories */,
+			);
+			name = Infrastructure;
+			path = Infrastructure/Network/Infrastructure;
+			sourceTree = "<group>";
+		};
+		9089E7A92A072B8200A83580 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9089E7AA2A072B8200A83580 /* DataTransferService.swift */,
+				9089E7AB2A072B8200A83580 /* NetworkService.swift */,
+				9089E7AC2A072B8200A83580 /* Endpoint */,
+				9089E7B32A072B8200A83580 /* NetworkSessionManager.swift */,
+				9089E7B42A072B8200A83580 /* Error */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9089E7AC2A072B8200A83580 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				9089E7AD2A072B8200A83580 /* BodyEncoding.swift */,
+				9089E7AE2A072B8200A83580 /* Requestable.swift */,
+				9089E7AF2A072B8200A83580 /* HTTPMethod.swift */,
+				9089E7B02A072B8200A83580 /* ResponseDecoder.swift */,
+				9089E7B12A072B8200A83580 /* APIDataNetworkConfiguration.swift */,
+				9089E7B22A072B8200A83580 /* Endpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		9089E7B42A072B8200A83580 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				9089E7B52A072B8200A83580 /* DataTransferError.swift */,
+				9089E7B62A072B8200A83580 /* NetworkError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		9089E7B72A072B8200A83580 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +238,6 @@
 			files = (
 				9089E79A2A07281400A83580 /* LaunchScreen.storyboard in Resources */,
 				9089E7972A07281400A83580 /* Assets.xcassets in Resources */,
-				9089E7952A07281300A83580 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +248,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9089E7BC2A072B8200A83580 /* BodyEncoding.swift in Sources */,
+				9089E7C42A072B8200A83580 /* NetworkError.swift in Sources */,
+				9089E7BD2A072B8200A83580 /* Requestable.swift in Sources */,
+				9089E7BB2A072B8200A83580 /* NetworkService.swift in Sources */,
+				9089E7C22A072B8200A83580 /* NetworkSessionManager.swift in Sources */,
+				9089E7BA2A072B8200A83580 /* DataTransferService.swift in Sources */,
+				9089E7C32A072B8200A83580 /* DataTransferError.swift in Sources */,
+				9089E7C02A072B8200A83580 /* APIDataNetworkConfiguration.swift in Sources */,
+				9089E7BE2A072B8200A83580 /* HTTPMethod.swift in Sources */,
 				9089E7922A07281300A83580 /* ViewController.swift in Sources */,
 				9089E78E2A07281300A83580 /* AppDelegate.swift in Sources */,
+				9089E7BF2A072B8200A83580 /* ResponseDecoder.swift in Sources */,
+				9089E7C12A072B8200A83580 /* Endpoint.swift in Sources */,
 				9089E7902A07281300A83580 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +268,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9089E7932A07281300A83580 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9089E7942A07281300A83580 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9089E7982A07281400A83580 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +405,6 @@
 				INFOPLIST_FILE = CalendarApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +432,6 @@
 				INFOPLIST_FILE = CalendarApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
