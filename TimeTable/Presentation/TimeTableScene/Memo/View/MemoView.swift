@@ -130,7 +130,7 @@ final class MemoView: BaseView {
             descriptionStackView.topAnchor.constraint(equalTo: titleStackView.bottomAnchor, constant: 30),
             descriptionStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             descriptionStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
-            descriptionStackView.heightAnchor.constraint(equalToConstant: 350)
+            descriptionStackView.heightAnchor.constraint(equalToConstant: 280)
         ])
 
         NSLayoutConstraint.activate([
@@ -139,7 +139,7 @@ final class MemoView: BaseView {
     }
 
     func generate(_ code: String?) -> MemoEntity? {
-        if let viewController = self.findViewController() as? MemoViewController {
+        if self.findViewController() is MemoViewController {
             let code = code ?? ""
             let title = titleTextField.text ?? ""
             let description = descriptionTextView.text ?? ""
