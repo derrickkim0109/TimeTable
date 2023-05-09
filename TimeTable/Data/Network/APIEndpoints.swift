@@ -6,6 +6,26 @@
 //
 
 struct APIEndpoints {
+    static func fetchLectures(
+        _ code: String? = nil,
+        _ lecture: String? = nil) -> Endpoint<LecturesResponseDTO> {
+            let codeParameter = ["code": code ?? ""]
+            let lectureParameter = ["lecture": lecture ?? ""]
+
+            var queryParameter: [String: Any] = [:]
+
+            if code != nil {
+                queryParameter = codeParameter as [String : Any]
+            } else if lecture != nil {
+                queryParameter = lectureParameter as [String : Any]
+            }
+
+            return Endpoint(
+                path: HTTPPath.lectures.value,
+                method: .get,
+                queryParameters: queryParameter as [String : Any])
+        }
+
     static func fetchTiemTable() -> Endpoint<TimeTableResponseDTO> {
         let queryParameter = ["user_key": AppConfiguration.userToken]
 
