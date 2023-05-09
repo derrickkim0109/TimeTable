@@ -54,4 +54,42 @@ struct APIEndpoints {
             method: .delete,
             bodyParameters: bodyParameters)
     }
+
+    static func fetchMemosInLecture(_ code: String?) -> Endpoint<MemoResponseDTO> {
+        var queryParameter = ["user_key": AppConfiguration.userToken]
+
+        if let code = code {
+            queryParameter.updateValue(code, forKey: "code")
+        }
+
+        return Endpoint(
+            path: HTTPPath.memo.value,
+            method: .get,
+            queryParameters: queryParameter as [String : Any])
+    }
+
+    static func enrollMemo(_ memo: MemoRequestDTO) -> Endpoint<()> {
+        let bodyParameters = ["user_key": AppConfiguration.userToken,
+                              "code": memo.code,
+                              "type": memo.type,
+                              "title": memo.title,
+                              "description": memo.description,
+                              "date": memo.date]
+
+        return Endpoint(
+            path: HTTPPath.memo.value,
+            method: .post,
+            bodyParameters: bodyParameters as [String : Any])
+    }
+
+    static func deleteMemo(_ memo: MemoRequestDTO) -> Endpoint<()> {
+        let bodyParameters = ["user_key": AppConfiguration.userToken,
+                              "code": memo.code,
+                              "type": memo.type]
+
+        return Endpoint(
+            path: HTTPPath.memo.value,
+            method: .delete,
+            bodyParameters: bodyParameters as [String : Any])
+    }
 }
