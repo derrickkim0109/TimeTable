@@ -1,0 +1,1086 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		901D8F372A0767450012F607 /* ConnectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901D8F362A0767450012F607 /* ConnectionError.swift */; };
+		901D8F3A2A07676C0012F607 /* AnyCancelTaskBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901D8F392A07676C0012F607 /* AnyCancelTaskBag.swift */; };
+		901D8F3D2A0767A10012F607 /* AnyCancellableTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901D8F3C2A0767A10012F607 /* AnyCancellableTask.swift */; };
+		901D8F702A0794110012F607 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901D8F6F2A0794110012F607 /* Color+Extensions.swift */; };
+		901D8F7C2A07CC8C0012F607 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901D8F7B2A07CC8C0012F607 /* Date+Extensions.swift */; };
+		901D8F802A07D7F10012F607 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901D8F7F2A07D7F10012F607 /* String+Extensions.swift */; };
+		901D8F942A0885B20012F607 /* JZCalendarWeekView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901D8F912A0885A90012F607 /* JZCalendarWeekView.framework */; };
+		901D8F952A0885B30012F607 /* JZCalendarWeekView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 901D8F912A0885A90012F607 /* JZCalendarWeekView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		901D8F982A088ABD0012F607 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901D8F972A088ABD0012F607 /* AppConfiguration.swift */; };
+		901D8FD72A08EBCA0012F607 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901D8FD62A08EBCA0012F607 /* Array+Extensions.swift */; };
+		9089E78E2A07281300A83580 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9089E78D2A07281300A83580 /* AppDelegate.swift */; };
+		9089E7902A07281300A83580 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9089E78F2A07281300A83580 /* SceneDelegate.swift */; };
+		9089E7972A07281400A83580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9089E7962A07281400A83580 /* Assets.xcassets */; };
+		9089E79A2A07281400A83580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9089E7982A07281400A83580 /* LaunchScreen.storyboard */; };
+		90DC2A5A2A0A32B8001F50A0 /* UserDefault+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A592A0A32B8001F50A0 /* UserDefault+Extensions.swift */; };
+		90DC2A5C2A0A34B3001F50A0 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A5B2A0A34B3001F50A0 /* UIView+Extensions.swift */; };
+		90DC2AD32A0A6A58001F50A0 /* LectureDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A722A0A6A58001F50A0 /* LectureDetailViewModel.swift */; };
+		90DC2AD42A0A6A58001F50A0 /* DefaultLectureDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A732A0A6A58001F50A0 /* DefaultLectureDetailViewModel.swift */; };
+		90DC2AD52A0A6A58001F50A0 /* LectureDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A742A0A6A58001F50A0 /* LectureDetailViewController.swift */; };
+		90DC2AD62A0A6A58001F50A0 /* LectureDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A762A0A6A58001F50A0 /* LectureDetailView.swift */; };
+		90DC2AD72A0A6A58001F50A0 /* ReusableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A782A0A6A58001F50A0 /* ReusableCells.swift */; };
+		90DC2AD82A0A6A58001F50A0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A7A2A0A6A58001F50A0 /* BaseViewController.swift */; };
+		90DC2AD92A0A6A58001F50A0 /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A7C2A0A6A58001F50A0 /* BaseProtocol.swift */; };
+		90DC2ADA2A0A6A58001F50A0 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A7D2A0A6A58001F50A0 /* BaseView.swift */; };
+		90DC2ADB2A0A6A58001F50A0 /* LectureInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A7E2A0A6A58001F50A0 /* LectureInfoView.swift */; };
+		90DC2ADC2A0A6A58001F50A0 /* AlertControllerBulider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A7F2A0A6A58001F50A0 /* AlertControllerBulider.swift */; };
+		90DC2ADD2A0A6A58001F50A0 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A832A0A6A58001F50A0 /* SearchViewModel.swift */; };
+		90DC2ADE2A0A6A58001F50A0 /* DefaultSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A842A0A6A58001F50A0 /* DefaultSearchViewModel.swift */; };
+		90DC2ADF2A0A6A58001F50A0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A852A0A6A58001F50A0 /* SearchViewController.swift */; };
+		90DC2AE02A0A6A58001F50A0 /* LectureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A872A0A6A58001F50A0 /* LectureCollectionViewCell.swift */; };
+		90DC2AE12A0A6A58001F50A0 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A882A0A6A58001F50A0 /* SearchView.swift */; };
+		90DC2AE22A0A6A58001F50A0 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A892A0A6A58001F50A0 /* SearchBarView.swift */; };
+		90DC2AE32A0A6A58001F50A0 /* MemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A8D2A0A6A58001F50A0 /* MemoViewModel.swift */; };
+		90DC2AE42A0A6A58001F50A0 /* DefaultMemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A8E2A0A6A58001F50A0 /* DefaultMemoViewModel.swift */; };
+		90DC2AE52A0A6A58001F50A0 /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A8F2A0A6A58001F50A0 /* MemoViewController.swift */; };
+		90DC2AE62A0A6A58001F50A0 /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A912A0A6A58001F50A0 /* MemoView.swift */; };
+		90DC2AE72A0A6A58001F50A0 /* DefaultMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A942A0A6A58001F50A0 /* DefaultMainViewModel.swift */; };
+		90DC2AE82A0A6A58001F50A0 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A962A0A6A58001F50A0 /* MainViewModel.swift */; };
+		90DC2AE92A0A6A58001F50A0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A972A0A6A58001F50A0 /* MainViewController.swift */; };
+		90DC2AEA2A0A6A58001F50A0 /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A9A2A0A6A58001F50A0 /* CalendarCollectionViewCell.swift */; };
+		90DC2AEB2A0A6A58001F50A0 /* MemoTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A9B2A0A6A58001F50A0 /* MemoTitleView.swift */; };
+		90DC2AEC2A0A6A58001F50A0 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A9C2A0A6A58001F50A0 /* CalendarView.swift */; };
+		90DC2AED2A0A6A58001F50A0 /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A9D2A0A6A58001F50A0 /* MainHeaderView.swift */; };
+		90DC2AEE2A0A6A58001F50A0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A9E2A0A6A58001F50A0 /* MainView.swift */; };
+		90DC2AEF2A0A6A58001F50A0 /* MainNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A9F2A0A6A58001F50A0 /* MainNavigationBarView.swift */; };
+		90DC2AF02A0A6A58001F50A0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AA12A0A6A58001F50A0 /* AppCoordinator.swift */; };
+		90DC2AF12A0A6A58001F50A0 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AA22A0A6A58001F50A0 /* MainCoordinator.swift */; };
+		90DC2AF22A0A6A58001F50A0 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AA72A0A6A58001F50A0 /* DataTransferService.swift */; };
+		90DC2AF32A0A6A58001F50A0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AA82A0A6A58001F50A0 /* NetworkService.swift */; };
+		90DC2AF42A0A6A58001F50A0 /* BodyEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AAA2A0A6A58001F50A0 /* BodyEncoding.swift */; };
+		90DC2AF52A0A6A58001F50A0 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AAB2A0A6A58001F50A0 /* Requestable.swift */; };
+		90DC2AF62A0A6A58001F50A0 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AAC2A0A6A58001F50A0 /* HTTPMethod.swift */; };
+		90DC2AF72A0A6A58001F50A0 /* ResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AAD2A0A6A58001F50A0 /* ResponseDecoder.swift */; };
+		90DC2AF82A0A6A58001F50A0 /* APIDataNetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AAE2A0A6A58001F50A0 /* APIDataNetworkConfiguration.swift */; };
+		90DC2AF92A0A6A58001F50A0 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AAF2A0A6A58001F50A0 /* Endpoint.swift */; };
+		90DC2AFA2A0A6A58001F50A0 /* NetworkSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AB02A0A6A58001F50A0 /* NetworkSessionManager.swift */; };
+		90DC2AFB2A0A6A58001F50A0 /* DataTransferError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AB22A0A6A58001F50A0 /* DataTransferError.swift */; };
+		90DC2AFC2A0A6A58001F50A0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AB32A0A6A58001F50A0 /* NetworkError.swift */; };
+		90DC2AFD2A0A6A58001F50A0 /* DefaultLecturesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AB52A0A6A58001F50A0 /* DefaultLecturesRepository.swift */; };
+		90DC2AFE2A0A6A58001F50A0 /* DefaultMemoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AB62A0A6A58001F50A0 /* DefaultMemoRepository.swift */; };
+		90DC2AFF2A0A6A58001F50A0 /* DefaultTimeTableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AB72A0A6A58001F50A0 /* DefaultTimeTableRepository.swift */; };
+		90DC2B002A0A6A58001F50A0 /* MemoResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AB92A0A6A58001F50A0 /* MemoResponseDTO+Mapping.swift */; };
+		90DC2B012A0A6A58001F50A0 /* LecturesResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2ABA2A0A6A58001F50A0 /* LecturesResponseDTO+Mapping.swift */; };
+		90DC2B022A0A6A58001F50A0 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2ABC2A0A6A58001F50A0 /* APIEndpoints.swift */; };
+		90DC2B032A0A6A58001F50A0 /* MemoRequestDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2ABD2A0A6A58001F50A0 /* MemoRequestDTO+Mapping.swift */; };
+		90DC2B042A0A6A58001F50A0 /* TimeTableResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2ABE2A0A6A58001F50A0 /* TimeTableResponseDTO+Mapping.swift */; };
+		90DC2B052A0A6A58001F50A0 /* TimeTableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AC12A0A6A58001F50A0 /* TimeTableRepository.swift */; };
+		90DC2B062A0A6A58001F50A0 /* LecturesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AC22A0A6A58001F50A0 /* LecturesRepository.swift */; };
+		90DC2B072A0A6A58001F50A0 /* MemoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AC32A0A6A58001F50A0 /* MemoRepository.swift */; };
+		90DC2B082A0A6A58001F50A0 /* DeleteMemoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AC62A0A6A58001F50A0 /* DeleteMemoUseCase.swift */; };
+		90DC2B092A0A6A58001F50A0 /* EnrollMemoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AC72A0A6A58001F50A0 /* EnrollMemoUseCase.swift */; };
+		90DC2B0A2A0A6A58001F50A0 /* FetchMemosUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AC82A0A6A58001F50A0 /* FetchMemosUseCase.swift */; };
+		90DC2B0B2A0A6A58001F50A0 /* FetchLecturesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2ACA2A0A6A58001F50A0 /* FetchLecturesUseCase.swift */; };
+		90DC2B0C2A0A6A58001F50A0 /* DeleteTimeTableUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2ACC2A0A6A58001F50A0 /* DeleteTimeTableUseCase.swift */; };
+		90DC2B0D2A0A6A58001F50A0 /* EnrollTimeTableUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2ACD2A0A6A58001F50A0 /* EnrollTimeTableUseCase.swift */; };
+		90DC2B0E2A0A6A58001F50A0 /* FetchTimeTableUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2ACE2A0A6A58001F50A0 /* FetchTimeTableUseCase.swift */; };
+		90DC2B0F2A0A6A58001F50A0 /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AD02A0A6A58001F50A0 /* CalendarEvent.swift */; };
+		90DC2B102A0A6A58001F50A0 /* LectureEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AD12A0A6A58001F50A0 /* LectureEntity.swift */; };
+		90DC2B112A0A6A58001F50A0 /* MemoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AD22A0A6A58001F50A0 /* MemoEntity.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		901D8F902A0885A90012F607 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 901D8F8B2A0885A90012F607 /* JZCalendarWeekView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8E1BA94A206B4329007BE13C;
+			remoteInfo = JZCalendarWeekView;
+		};
+		901D8F922A0885A90012F607 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 901D8F8B2A0885A90012F607 /* JZCalendarWeekView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8E023C75206C6E4B00C523BE;
+			remoteInfo = JZCalendarWeekViewTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		901D8F962A0885B30012F607 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				901D8F952A0885B30012F607 /* JZCalendarWeekView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		901D8F362A0767450012F607 /* ConnectionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionError.swift; sourceTree = "<group>"; };
+		901D8F392A07676C0012F607 /* AnyCancelTaskBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCancelTaskBag.swift; sourceTree = "<group>"; };
+		901D8F3C2A0767A10012F607 /* AnyCancellableTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCancellableTask.swift; sourceTree = "<group>"; };
+		901D8F6F2A0794110012F607 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		901D8F7B2A07CC8C0012F607 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		901D8F7F2A07D7F10012F607 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		901D8F8B2A0885A90012F607 /* JZCalendarWeekView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JZCalendarWeekView.xcodeproj; path = JZCalendarWeekView/JZCalendarWeekView.xcodeproj; sourceTree = "<group>"; };
+		901D8F972A088ABD0012F607 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		901D8FD62A08EBCA0012F607 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		9089E78A2A07281300A83580 /* TimeTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9089E78D2A07281300A83580 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9089E78F2A07281300A83580 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9089E7962A07281400A83580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9089E7992A07281400A83580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9089E79B2A07281400A83580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90DC2A592A0A32B8001F50A0 /* UserDefault+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+Extensions.swift"; sourceTree = "<group>"; };
+		90DC2A5B2A0A34B3001F50A0 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		90DC2A722A0A6A58001F50A0 /* LectureDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LectureDetailViewModel.swift; sourceTree = "<group>"; };
+		90DC2A732A0A6A58001F50A0 /* DefaultLectureDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultLectureDetailViewModel.swift; sourceTree = "<group>"; };
+		90DC2A742A0A6A58001F50A0 /* LectureDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LectureDetailViewController.swift; sourceTree = "<group>"; };
+		90DC2A762A0A6A58001F50A0 /* LectureDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LectureDetailView.swift; sourceTree = "<group>"; };
+		90DC2A782A0A6A58001F50A0 /* ReusableCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCells.swift; sourceTree = "<group>"; };
+		90DC2A7A2A0A6A58001F50A0 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		90DC2A7C2A0A6A58001F50A0 /* BaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseProtocol.swift; sourceTree = "<group>"; };
+		90DC2A7D2A0A6A58001F50A0 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		90DC2A7E2A0A6A58001F50A0 /* LectureInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LectureInfoView.swift; sourceTree = "<group>"; };
+		90DC2A7F2A0A6A58001F50A0 /* AlertControllerBulider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertControllerBulider.swift; sourceTree = "<group>"; };
+		90DC2A832A0A6A58001F50A0 /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		90DC2A842A0A6A58001F50A0 /* DefaultSearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultSearchViewModel.swift; sourceTree = "<group>"; };
+		90DC2A852A0A6A58001F50A0 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		90DC2A872A0A6A58001F50A0 /* LectureCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LectureCollectionViewCell.swift; sourceTree = "<group>"; };
+		90DC2A882A0A6A58001F50A0 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		90DC2A892A0A6A58001F50A0 /* SearchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		90DC2A8D2A0A6A58001F50A0 /* MemoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoViewModel.swift; sourceTree = "<group>"; };
+		90DC2A8E2A0A6A58001F50A0 /* DefaultMemoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultMemoViewModel.swift; sourceTree = "<group>"; };
+		90DC2A8F2A0A6A58001F50A0 /* MemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
+		90DC2A912A0A6A58001F50A0 /* MemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoView.swift; sourceTree = "<group>"; };
+		90DC2A942A0A6A58001F50A0 /* DefaultMainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultMainViewModel.swift; sourceTree = "<group>"; };
+		90DC2A962A0A6A58001F50A0 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		90DC2A972A0A6A58001F50A0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		90DC2A9A2A0A6A58001F50A0 /* CalendarCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCell.swift; sourceTree = "<group>"; };
+		90DC2A9B2A0A6A58001F50A0 /* MemoTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoTitleView.swift; sourceTree = "<group>"; };
+		90DC2A9C2A0A6A58001F50A0 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		90DC2A9D2A0A6A58001F50A0 /* MainHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
+		90DC2A9E2A0A6A58001F50A0 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		90DC2A9F2A0A6A58001F50A0 /* MainNavigationBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationBarView.swift; sourceTree = "<group>"; };
+		90DC2AA12A0A6A58001F50A0 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		90DC2AA22A0A6A58001F50A0 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		90DC2AA72A0A6A58001F50A0 /* DataTransferService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
+		90DC2AA82A0A6A58001F50A0 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		90DC2AAA2A0A6A58001F50A0 /* BodyEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyEncoding.swift; sourceTree = "<group>"; };
+		90DC2AAB2A0A6A58001F50A0 /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
+		90DC2AAC2A0A6A58001F50A0 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		90DC2AAD2A0A6A58001F50A0 /* ResponseDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseDecoder.swift; sourceTree = "<group>"; };
+		90DC2AAE2A0A6A58001F50A0 /* APIDataNetworkConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDataNetworkConfiguration.swift; sourceTree = "<group>"; };
+		90DC2AAF2A0A6A58001F50A0 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		90DC2AB02A0A6A58001F50A0 /* NetworkSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSessionManager.swift; sourceTree = "<group>"; };
+		90DC2AB22A0A6A58001F50A0 /* DataTransferError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTransferError.swift; sourceTree = "<group>"; };
+		90DC2AB32A0A6A58001F50A0 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		90DC2AB52A0A6A58001F50A0 /* DefaultLecturesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultLecturesRepository.swift; sourceTree = "<group>"; };
+		90DC2AB62A0A6A58001F50A0 /* DefaultMemoRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultMemoRepository.swift; sourceTree = "<group>"; };
+		90DC2AB72A0A6A58001F50A0 /* DefaultTimeTableRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTimeTableRepository.swift; sourceTree = "<group>"; };
+		90DC2AB92A0A6A58001F50A0 /* MemoResponseDTO+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MemoResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
+		90DC2ABA2A0A6A58001F50A0 /* LecturesResponseDTO+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LecturesResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
+		90DC2ABC2A0A6A58001F50A0 /* APIEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		90DC2ABD2A0A6A58001F50A0 /* MemoRequestDTO+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MemoRequestDTO+Mapping.swift"; sourceTree = "<group>"; };
+		90DC2ABE2A0A6A58001F50A0 /* TimeTableResponseDTO+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeTableResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
+		90DC2AC12A0A6A58001F50A0 /* TimeTableRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableRepository.swift; sourceTree = "<group>"; };
+		90DC2AC22A0A6A58001F50A0 /* LecturesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LecturesRepository.swift; sourceTree = "<group>"; };
+		90DC2AC32A0A6A58001F50A0 /* MemoRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoRepository.swift; sourceTree = "<group>"; };
+		90DC2AC62A0A6A58001F50A0 /* DeleteMemoUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteMemoUseCase.swift; sourceTree = "<group>"; };
+		90DC2AC72A0A6A58001F50A0 /* EnrollMemoUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnrollMemoUseCase.swift; sourceTree = "<group>"; };
+		90DC2AC82A0A6A58001F50A0 /* FetchMemosUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchMemosUseCase.swift; sourceTree = "<group>"; };
+		90DC2ACA2A0A6A58001F50A0 /* FetchLecturesUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchLecturesUseCase.swift; sourceTree = "<group>"; };
+		90DC2ACC2A0A6A58001F50A0 /* DeleteTimeTableUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteTimeTableUseCase.swift; sourceTree = "<group>"; };
+		90DC2ACD2A0A6A58001F50A0 /* EnrollTimeTableUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnrollTimeTableUseCase.swift; sourceTree = "<group>"; };
+		90DC2ACE2A0A6A58001F50A0 /* FetchTimeTableUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchTimeTableUseCase.swift; sourceTree = "<group>"; };
+		90DC2AD02A0A6A58001F50A0 /* CalendarEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarEvent.swift; sourceTree = "<group>"; };
+		90DC2AD12A0A6A58001F50A0 /* LectureEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LectureEntity.swift; sourceTree = "<group>"; };
+		90DC2AD22A0A6A58001F50A0 /* MemoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoEntity.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9089E7872A07281300A83580 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				901D8F942A0885B20012F607 /* JZCalendarWeekView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		901D8F3B2A07677B0012F607 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				901D8F362A0767450012F607 /* ConnectionError.swift */,
+				901D8F6E2A0794060012F607 /* Extensions */,
+				901D8F3E2A0767AA0012F607 /* AnyTask */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		901D8F3E2A0767AA0012F607 /* AnyTask */ = {
+			isa = PBXGroup;
+			children = (
+				901D8F392A07676C0012F607 /* AnyCancelTaskBag.swift */,
+				901D8F3C2A0767A10012F607 /* AnyCancellableTask.swift */,
+			);
+			path = AnyTask;
+			sourceTree = "<group>";
+		};
+		901D8F5F2A078DB20012F607 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				901D8F8B2A0885A90012F607 /* JZCalendarWeekView.xcodeproj */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		901D8F6E2A0794060012F607 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				901D8F6F2A0794110012F607 /* Color+Extensions.swift */,
+				90DC2A5B2A0A34B3001F50A0 /* UIView+Extensions.swift */,
+				90DC2A592A0A32B8001F50A0 /* UserDefault+Extensions.swift */,
+				901D8F7B2A07CC8C0012F607 /* Date+Extensions.swift */,
+				901D8F7F2A07D7F10012F607 /* String+Extensions.swift */,
+				901D8FD62A08EBCA0012F607 /* Array+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		901D8F8C2A0885A90012F607 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				901D8F912A0885A90012F607 /* JZCalendarWeekView.framework */,
+				901D8F932A0885A90012F607 /* JZCalendarWeekViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9089E7812A07281300A83580 = {
+			isa = PBXGroup;
+			children = (
+				9089E78C2A07281300A83580 /* TimeTable */,
+				901D8F5F2A078DB20012F607 /* Frameworks */,
+				9089E78B2A07281300A83580 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9089E78B2A07281300A83580 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9089E78A2A07281300A83580 /* TimeTable.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9089E78C2A07281300A83580 /* TimeTable */ = {
+			isa = PBXGroup;
+			children = (
+				9089E7A22A072A9C00A83580 /* Application */,
+				90DC2A6D2A0A6A58001F50A0 /* Presentation */,
+				90DC2ABF2A0A6A58001F50A0 /* Domain */,
+				90DC2AB82A0A6A58001F50A0 /* Data */,
+				90DC2AA32A0A6A58001F50A0 /* Infrastructure */,
+				901D8F3B2A07677B0012F607 /* Utils */,
+				9089E7A12A072A0800A83580 /* Resources */,
+			);
+			path = TimeTable;
+			sourceTree = "<group>";
+		};
+		9089E7A12A072A0800A83580 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9089E7962A07281400A83580 /* Assets.xcassets */,
+				9089E7982A07281400A83580 /* LaunchScreen.storyboard */,
+				9089E79B2A07281400A83580 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9089E7A22A072A9C00A83580 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9089E78D2A07281300A83580 /* AppDelegate.swift */,
+				9089E78F2A07281300A83580 /* SceneDelegate.swift */,
+				901D8F972A088ABD0012F607 /* AppConfiguration.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		90DC2A6D2A0A6A58001F50A0 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2A6E2A0A6A58001F50A0 /* TimeTableScene */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		90DC2A6E2A0A6A58001F50A0 /* TimeTableScene */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2A6F2A0A6A58001F50A0 /* LectureDetail */,
+				90DC2A772A0A6A58001F50A0 /* Utils */,
+				90DC2A802A0A6A58001F50A0 /* Search */,
+				90DC2A8A2A0A6A58001F50A0 /* Memo */,
+				90DC2A922A0A6A58001F50A0 /* Main */,
+				90DC2AA02A0A6A58001F50A0 /* Flow */,
+			);
+			path = TimeTableScene;
+			sourceTree = "<group>";
+		};
+		90DC2A6F2A0A6A58001F50A0 /* LectureDetail */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2A702A0A6A58001F50A0 /* ViewModel */,
+				90DC2A742A0A6A58001F50A0 /* LectureDetailViewController.swift */,
+				90DC2A752A0A6A58001F50A0 /* View */,
+			);
+			path = LectureDetail;
+			sourceTree = "<group>";
+		};
+		90DC2A702A0A6A58001F50A0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2A712A0A6A58001F50A0 /* Protocol */,
+				90DC2A732A0A6A58001F50A0 /* DefaultLectureDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		90DC2A712A0A6A58001F50A0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2A722A0A6A58001F50A0 /* LectureDetailViewModel.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		90DC2A752A0A6A58001F50A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2A762A0A6A58001F50A0 /* LectureDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		90DC2A772A0A6A58001F50A0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2A782A0A6A58001F50A0 /* ReusableCells.swift */,
+				90DC2A792A0A6A58001F50A0 /* View */,
+				90DC2A7E2A0A6A58001F50A0 /* LectureInfoView.swift */,
+				90DC2A7F2A0A6A58001F50A0 /* AlertControllerBulider.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		90DC2A792A0A6A58001F50A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2A7A2A0A6A58001F50A0 /* BaseViewController.swift */,
+				90DC2A7B2A0A6A58001F50A0 /* Protocol */,
+				90DC2A7D2A0A6A58001F50A0 /* BaseView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		90DC2A7B2A0A6A58001F50A0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2A7C2A0A6A58001F50A0 /* BaseProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		90DC2A802A0A6A58001F50A0 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2A812A0A6A58001F50A0 /* ViewModel */,
+				90DC2A852A0A6A58001F50A0 /* SearchViewController.swift */,
+				90DC2A862A0A6A58001F50A0 /* View */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		90DC2A812A0A6A58001F50A0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2A822A0A6A58001F50A0 /* Protocol */,
+				90DC2A842A0A6A58001F50A0 /* DefaultSearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		90DC2A822A0A6A58001F50A0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2A832A0A6A58001F50A0 /* SearchViewModel.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		90DC2A862A0A6A58001F50A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2A872A0A6A58001F50A0 /* LectureCollectionViewCell.swift */,
+				90DC2A882A0A6A58001F50A0 /* SearchView.swift */,
+				90DC2A892A0A6A58001F50A0 /* SearchBarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		90DC2A8A2A0A6A58001F50A0 /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2A8B2A0A6A58001F50A0 /* ViewModel */,
+				90DC2A8F2A0A6A58001F50A0 /* MemoViewController.swift */,
+				90DC2A902A0A6A58001F50A0 /* View */,
+			);
+			path = Memo;
+			sourceTree = "<group>";
+		};
+		90DC2A8B2A0A6A58001F50A0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2A8C2A0A6A58001F50A0 /* Protocol */,
+				90DC2A8E2A0A6A58001F50A0 /* DefaultMemoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		90DC2A8C2A0A6A58001F50A0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2A8D2A0A6A58001F50A0 /* MemoViewModel.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		90DC2A902A0A6A58001F50A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2A912A0A6A58001F50A0 /* MemoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		90DC2A922A0A6A58001F50A0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2A932A0A6A58001F50A0 /* ViewModel */,
+				90DC2A972A0A6A58001F50A0 /* MainViewController.swift */,
+				90DC2A982A0A6A58001F50A0 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		90DC2A932A0A6A58001F50A0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2A942A0A6A58001F50A0 /* DefaultMainViewModel.swift */,
+				90DC2A952A0A6A58001F50A0 /* Protocol */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		90DC2A952A0A6A58001F50A0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2A962A0A6A58001F50A0 /* MainViewModel.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		90DC2A982A0A6A58001F50A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2A992A0A6A58001F50A0 /* CalendarView */,
+				90DC2A9D2A0A6A58001F50A0 /* MainHeaderView.swift */,
+				90DC2A9E2A0A6A58001F50A0 /* MainView.swift */,
+				90DC2A9F2A0A6A58001F50A0 /* MainNavigationBarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		90DC2A992A0A6A58001F50A0 /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2A9A2A0A6A58001F50A0 /* CalendarCollectionViewCell.swift */,
+				90DC2A9B2A0A6A58001F50A0 /* MemoTitleView.swift */,
+				90DC2A9C2A0A6A58001F50A0 /* CalendarView.swift */,
+			);
+			path = CalendarView;
+			sourceTree = "<group>";
+		};
+		90DC2AA02A0A6A58001F50A0 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2AA12A0A6A58001F50A0 /* AppCoordinator.swift */,
+				90DC2AA22A0A6A58001F50A0 /* MainCoordinator.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		90DC2AA32A0A6A58001F50A0 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2AA42A0A6A58001F50A0 /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		90DC2AA42A0A6A58001F50A0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2AA52A0A6A58001F50A0 /* Infrastructure */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		90DC2AA52A0A6A58001F50A0 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2AA62A0A6A58001F50A0 /* Network */,
+				90DC2AB42A0A6A58001F50A0 /* Repositories */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		90DC2AA62A0A6A58001F50A0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2AA72A0A6A58001F50A0 /* DataTransferService.swift */,
+				90DC2AA82A0A6A58001F50A0 /* NetworkService.swift */,
+				90DC2AA92A0A6A58001F50A0 /* Endpoint */,
+				90DC2AB02A0A6A58001F50A0 /* NetworkSessionManager.swift */,
+				90DC2AB12A0A6A58001F50A0 /* Error */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		90DC2AA92A0A6A58001F50A0 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2AAA2A0A6A58001F50A0 /* BodyEncoding.swift */,
+				90DC2AAB2A0A6A58001F50A0 /* Requestable.swift */,
+				90DC2AAC2A0A6A58001F50A0 /* HTTPMethod.swift */,
+				90DC2AAD2A0A6A58001F50A0 /* ResponseDecoder.swift */,
+				90DC2AAE2A0A6A58001F50A0 /* APIDataNetworkConfiguration.swift */,
+				90DC2AAF2A0A6A58001F50A0 /* Endpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		90DC2AB12A0A6A58001F50A0 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2AB22A0A6A58001F50A0 /* DataTransferError.swift */,
+				90DC2AB32A0A6A58001F50A0 /* NetworkError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		90DC2AB42A0A6A58001F50A0 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2AB52A0A6A58001F50A0 /* DefaultLecturesRepository.swift */,
+				90DC2AB62A0A6A58001F50A0 /* DefaultMemoRepository.swift */,
+				90DC2AB72A0A6A58001F50A0 /* DefaultTimeTableRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		90DC2AB82A0A6A58001F50A0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2AB92A0A6A58001F50A0 /* MemoResponseDTO+Mapping.swift */,
+				90DC2ABA2A0A6A58001F50A0 /* LecturesResponseDTO+Mapping.swift */,
+				90DC2ABB2A0A6A58001F50A0 /* Network */,
+				90DC2ABD2A0A6A58001F50A0 /* MemoRequestDTO+Mapping.swift */,
+				90DC2ABE2A0A6A58001F50A0 /* TimeTableResponseDTO+Mapping.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		90DC2ABB2A0A6A58001F50A0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2ABC2A0A6A58001F50A0 /* APIEndpoints.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		90DC2ABF2A0A6A58001F50A0 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2AC02A0A6A58001F50A0 /* Repositories */,
+				90DC2AC42A0A6A58001F50A0 /* UseCases */,
+				90DC2ACF2A0A6A58001F50A0 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		90DC2AC02A0A6A58001F50A0 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2AC12A0A6A58001F50A0 /* TimeTableRepository.swift */,
+				90DC2AC22A0A6A58001F50A0 /* LecturesRepository.swift */,
+				90DC2AC32A0A6A58001F50A0 /* MemoRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		90DC2AC42A0A6A58001F50A0 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2AC52A0A6A58001F50A0 /* Memo */,
+				90DC2AC92A0A6A58001F50A0 /* Lectures */,
+				90DC2ACB2A0A6A58001F50A0 /* TimeTable */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		90DC2AC52A0A6A58001F50A0 /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2AC62A0A6A58001F50A0 /* DeleteMemoUseCase.swift */,
+				90DC2AC72A0A6A58001F50A0 /* EnrollMemoUseCase.swift */,
+				90DC2AC82A0A6A58001F50A0 /* FetchMemosUseCase.swift */,
+			);
+			path = Memo;
+			sourceTree = "<group>";
+		};
+		90DC2AC92A0A6A58001F50A0 /* Lectures */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2ACA2A0A6A58001F50A0 /* FetchLecturesUseCase.swift */,
+			);
+			path = Lectures;
+			sourceTree = "<group>";
+		};
+		90DC2ACB2A0A6A58001F50A0 /* TimeTable */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2ACC2A0A6A58001F50A0 /* DeleteTimeTableUseCase.swift */,
+				90DC2ACD2A0A6A58001F50A0 /* EnrollTimeTableUseCase.swift */,
+				90DC2ACE2A0A6A58001F50A0 /* FetchTimeTableUseCase.swift */,
+			);
+			path = TimeTable;
+			sourceTree = "<group>";
+		};
+		90DC2ACF2A0A6A58001F50A0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2AD02A0A6A58001F50A0 /* CalendarEvent.swift */,
+				90DC2AD12A0A6A58001F50A0 /* LectureEntity.swift */,
+				90DC2AD22A0A6A58001F50A0 /* MemoEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9089E7892A07281300A83580 /* TimeTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9089E79E2A07281400A83580 /* Build configuration list for PBXNativeTarget "TimeTable" */;
+			buildPhases = (
+				9089E7862A07281300A83580 /* Sources */,
+				9089E7872A07281300A83580 /* Frameworks */,
+				9089E7882A07281300A83580 /* Resources */,
+				901D8F962A0885B30012F607 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeTable;
+			packageProductDependencies = (
+			);
+			productName = CalendarApp;
+			productReference = 9089E78A2A07281300A83580 /* TimeTable.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9089E7822A07281300A83580 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					9089E7892A07281300A83580 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 9089E7852A07281300A83580 /* Build configuration list for PBXProject "TimeTable" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9089E7812A07281300A83580;
+			packageReferences = (
+			);
+			productRefGroup = 9089E78B2A07281300A83580 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 901D8F8C2A0885A90012F607 /* Products */;
+					ProjectRef = 901D8F8B2A0885A90012F607 /* JZCalendarWeekView.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				9089E7892A07281300A83580 /* TimeTable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		901D8F912A0885A90012F607 /* JZCalendarWeekView.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JZCalendarWeekView.framework;
+			remoteRef = 901D8F902A0885A90012F607 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		901D8F932A0885A90012F607 /* JZCalendarWeekViewTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = JZCalendarWeekViewTests.xctest;
+			remoteRef = 901D8F922A0885A90012F607 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9089E7882A07281300A83580 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9089E79A2A07281400A83580 /* LaunchScreen.storyboard in Resources */,
+				9089E7972A07281400A83580 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9089E7862A07281300A83580 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90DC2AD32A0A6A58001F50A0 /* LectureDetailViewModel.swift in Sources */,
+				90DC2AE02A0A6A58001F50A0 /* LectureCollectionViewCell.swift in Sources */,
+				90DC2B092A0A6A58001F50A0 /* EnrollMemoUseCase.swift in Sources */,
+				90DC2B012A0A6A58001F50A0 /* LecturesResponseDTO+Mapping.swift in Sources */,
+				90DC2B032A0A6A58001F50A0 /* MemoRequestDTO+Mapping.swift in Sources */,
+				90DC2AFD2A0A6A58001F50A0 /* DefaultLecturesRepository.swift in Sources */,
+				90DC2AE42A0A6A58001F50A0 /* DefaultMemoViewModel.swift in Sources */,
+				901D8F372A0767450012F607 /* ConnectionError.swift in Sources */,
+				90DC2AED2A0A6A58001F50A0 /* MainHeaderView.swift in Sources */,
+				901D8F7C2A07CC8C0012F607 /* Date+Extensions.swift in Sources */,
+				90DC2AF02A0A6A58001F50A0 /* AppCoordinator.swift in Sources */,
+				90DC2AF72A0A6A58001F50A0 /* ResponseDecoder.swift in Sources */,
+				901D8F702A0794110012F607 /* Color+Extensions.swift in Sources */,
+				90DC2B082A0A6A58001F50A0 /* DeleteMemoUseCase.swift in Sources */,
+				90DC2AD62A0A6A58001F50A0 /* LectureDetailView.swift in Sources */,
+				90DC2AD82A0A6A58001F50A0 /* BaseViewController.swift in Sources */,
+				90DC2AFB2A0A6A58001F50A0 /* DataTransferError.swift in Sources */,
+				90DC2B112A0A6A58001F50A0 /* MemoEntity.swift in Sources */,
+				90DC2B002A0A6A58001F50A0 /* MemoResponseDTO+Mapping.swift in Sources */,
+				90DC2B022A0A6A58001F50A0 /* APIEndpoints.swift in Sources */,
+				90DC2B0D2A0A6A58001F50A0 /* EnrollTimeTableUseCase.swift in Sources */,
+				90DC2ADC2A0A6A58001F50A0 /* AlertControllerBulider.swift in Sources */,
+				90DC2A5C2A0A34B3001F50A0 /* UIView+Extensions.swift in Sources */,
+				90DC2ADA2A0A6A58001F50A0 /* BaseView.swift in Sources */,
+				90DC2B102A0A6A58001F50A0 /* LectureEntity.swift in Sources */,
+				90DC2AD52A0A6A58001F50A0 /* LectureDetailViewController.swift in Sources */,
+				90DC2AEC2A0A6A58001F50A0 /* CalendarView.swift in Sources */,
+				90DC2B0C2A0A6A58001F50A0 /* DeleteTimeTableUseCase.swift in Sources */,
+				901D8F982A088ABD0012F607 /* AppConfiguration.swift in Sources */,
+				90DC2B052A0A6A58001F50A0 /* TimeTableRepository.swift in Sources */,
+				90DC2AD42A0A6A58001F50A0 /* DefaultLectureDetailViewModel.swift in Sources */,
+				90DC2AF12A0A6A58001F50A0 /* MainCoordinator.swift in Sources */,
+				90DC2AE92A0A6A58001F50A0 /* MainViewController.swift in Sources */,
+				901D8F3D2A0767A10012F607 /* AnyCancellableTask.swift in Sources */,
+				90DC2AF52A0A6A58001F50A0 /* Requestable.swift in Sources */,
+				90DC2AFF2A0A6A58001F50A0 /* DefaultTimeTableRepository.swift in Sources */,
+				90DC2AF42A0A6A58001F50A0 /* BodyEncoding.swift in Sources */,
+				90DC2AE72A0A6A58001F50A0 /* DefaultMainViewModel.swift in Sources */,
+				90DC2B042A0A6A58001F50A0 /* TimeTableResponseDTO+Mapping.swift in Sources */,
+				90DC2AF82A0A6A58001F50A0 /* APIDataNetworkConfiguration.swift in Sources */,
+				9089E78E2A07281300A83580 /* AppDelegate.swift in Sources */,
+				90DC2ADE2A0A6A58001F50A0 /* DefaultSearchViewModel.swift in Sources */,
+				90DC2ADF2A0A6A58001F50A0 /* SearchViewController.swift in Sources */,
+				90DC2AE62A0A6A58001F50A0 /* MemoView.swift in Sources */,
+				90DC2AE52A0A6A58001F50A0 /* MemoViewController.swift in Sources */,
+				90DC2ADD2A0A6A58001F50A0 /* SearchViewModel.swift in Sources */,
+				90DC2ADB2A0A6A58001F50A0 /* LectureInfoView.swift in Sources */,
+				90DC2AFC2A0A6A58001F50A0 /* NetworkError.swift in Sources */,
+				90DC2AEA2A0A6A58001F50A0 /* CalendarCollectionViewCell.swift in Sources */,
+				90DC2AE12A0A6A58001F50A0 /* SearchView.swift in Sources */,
+				90DC2B0B2A0A6A58001F50A0 /* FetchLecturesUseCase.swift in Sources */,
+				90DC2AE32A0A6A58001F50A0 /* MemoViewModel.swift in Sources */,
+				90DC2AFA2A0A6A58001F50A0 /* NetworkSessionManager.swift in Sources */,
+				90DC2AE82A0A6A58001F50A0 /* MainViewModel.swift in Sources */,
+				901D8FD72A08EBCA0012F607 /* Array+Extensions.swift in Sources */,
+				90DC2AFE2A0A6A58001F50A0 /* DefaultMemoRepository.swift in Sources */,
+				90DC2AEB2A0A6A58001F50A0 /* MemoTitleView.swift in Sources */,
+				901D8F3A2A07676C0012F607 /* AnyCancelTaskBag.swift in Sources */,
+				90DC2AEE2A0A6A58001F50A0 /* MainView.swift in Sources */,
+				90DC2A5A2A0A32B8001F50A0 /* UserDefault+Extensions.swift in Sources */,
+				90DC2AEF2A0A6A58001F50A0 /* MainNavigationBarView.swift in Sources */,
+				901D8F802A07D7F10012F607 /* String+Extensions.swift in Sources */,
+				90DC2AE22A0A6A58001F50A0 /* SearchBarView.swift in Sources */,
+				90DC2B0A2A0A6A58001F50A0 /* FetchMemosUseCase.swift in Sources */,
+				90DC2AF32A0A6A58001F50A0 /* NetworkService.swift in Sources */,
+				90DC2AF22A0A6A58001F50A0 /* DataTransferService.swift in Sources */,
+				90DC2B0E2A0A6A58001F50A0 /* FetchTimeTableUseCase.swift in Sources */,
+				90DC2B072A0A6A58001F50A0 /* MemoRepository.swift in Sources */,
+				90DC2B062A0A6A58001F50A0 /* LecturesRepository.swift in Sources */,
+				90DC2AF62A0A6A58001F50A0 /* HTTPMethod.swift in Sources */,
+				90DC2AD72A0A6A58001F50A0 /* ReusableCells.swift in Sources */,
+				90DC2B0F2A0A6A58001F50A0 /* CalendarEvent.swift in Sources */,
+				90DC2AD92A0A6A58001F50A0 /* BaseProtocol.swift in Sources */,
+				90DC2AF92A0A6A58001F50A0 /* Endpoint.swift in Sources */,
+				9089E7902A07281300A83580 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9089E7982A07281400A83580 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9089E7992A07281400A83580 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9089E79C2A07281400A83580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BaseURL = "https://k03c8j1o5a.execute-api.ap-northeast-2.amazonaws.com/v1/programmers";
+				API_Key = QJuHAX8evMY24jvpHfHQ4pHGetlk5vn8FJbk70O6;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				User_Token = 5a26cc6eaa72c48149b28fb9e7646961;
+			};
+			name = Debug;
+		};
+		9089E79D2A07281400A83580 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BaseURL = "https://k03c8j1o5a.execute-api.ap-northeast-2.amazonaws.com/v1/programmers";
+				API_Key = QJuHAX8evMY24jvpHfHQ4pHGetlk5vn8FJbk70O6;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				User_Token = 5a26cc6eaa72c48149b28fb9e7646961;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9089E79F2A07281400A83580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				API_BaseURL = "https://k03c8j1o5a.execute-api.ap-northeast-2.amazonaws.com/v1/programmers";
+				API_Key = QJuHAX8evMY24jvpHfHQ4pHGetlk5vn8FJbk70O6;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PZ78W9Y6LP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeTable/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CalendarApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				User_Token = 5a26cc6eaa72c48149b28fb9e7646961;
+			};
+			name = Debug;
+		};
+		9089E7A02A07281400A83580 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				API_BaseURL = "https://k03c8j1o5a.execute-api.ap-northeast-2.amazonaws.com/v1/programmers";
+				API_Key = QJuHAX8evMY24jvpHfHQ4pHGetlk5vn8FJbk70O6;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PZ78W9Y6LP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeTable/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CalendarApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				User_Token = 5a26cc6eaa72c48149b28fb9e7646961;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9089E7852A07281300A83580 /* Build configuration list for PBXProject "TimeTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9089E79C2A07281400A83580 /* Debug */,
+				9089E79D2A07281400A83580 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9089E79E2A07281400A83580 /* Build configuration list for PBXNativeTarget "TimeTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9089E79F2A07281400A83580 /* Debug */,
+				9089E7A02A07281400A83580 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9089E7822A07281300A83580 /* Project object */;
+}
