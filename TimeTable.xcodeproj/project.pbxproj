@@ -17,6 +17,20 @@
 		901D8F952A0885B30012F607 /* JZCalendarWeekView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 901D8F912A0885A90012F607 /* JZCalendarWeekView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		901D8F982A088ABD0012F607 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901D8F972A088ABD0012F607 /* AppConfiguration.swift */; };
 		901D8FD72A08EBCA0012F607 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901D8FD62A08EBCA0012F607 /* Array+Extensions.swift */; };
+		9023D1262A0A753100235877 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023D1152A0A753100235877 /* DataTransferService.swift */; };
+		9023D1272A0A753100235877 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023D1162A0A753100235877 /* NetworkService.swift */; };
+		9023D1282A0A753100235877 /* BodyEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023D1182A0A753100235877 /* BodyEncoding.swift */; };
+		9023D1292A0A753100235877 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023D1192A0A753100235877 /* Requestable.swift */; };
+		9023D12A2A0A753100235877 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023D11A2A0A753100235877 /* HTTPMethod.swift */; };
+		9023D12B2A0A753100235877 /* ResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023D11B2A0A753100235877 /* ResponseDecoder.swift */; };
+		9023D12C2A0A753100235877 /* APIDataNetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023D11C2A0A753100235877 /* APIDataNetworkConfiguration.swift */; };
+		9023D12D2A0A753100235877 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023D11D2A0A753100235877 /* Endpoint.swift */; };
+		9023D12E2A0A753100235877 /* NetworkSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023D11E2A0A753100235877 /* NetworkSessionManager.swift */; };
+		9023D12F2A0A753100235877 /* DataTransferError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023D1202A0A753100235877 /* DataTransferError.swift */; };
+		9023D1302A0A753100235877 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023D1212A0A753100235877 /* NetworkError.swift */; };
+		9023D1312A0A753100235877 /* DefaultLecturesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023D1232A0A753100235877 /* DefaultLecturesRepository.swift */; };
+		9023D1322A0A753100235877 /* DefaultMemoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023D1242A0A753100235877 /* DefaultMemoRepository.swift */; };
+		9023D1332A0A753100235877 /* DefaultTimeTableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023D1252A0A753100235877 /* DefaultTimeTableRepository.swift */; };
 		9089E78E2A07281300A83580 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9089E78D2A07281300A83580 /* AppDelegate.swift */; };
 		9089E7902A07281300A83580 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9089E78F2A07281300A83580 /* SceneDelegate.swift */; };
 		9089E7972A07281400A83580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9089E7962A07281400A83580 /* Assets.xcassets */; };
@@ -54,20 +68,6 @@
 		90DC2AEF2A0A6A58001F50A0 /* MainNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2A9F2A0A6A58001F50A0 /* MainNavigationBarView.swift */; };
 		90DC2AF02A0A6A58001F50A0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AA12A0A6A58001F50A0 /* AppCoordinator.swift */; };
 		90DC2AF12A0A6A58001F50A0 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AA22A0A6A58001F50A0 /* MainCoordinator.swift */; };
-		90DC2AF22A0A6A58001F50A0 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AA72A0A6A58001F50A0 /* DataTransferService.swift */; };
-		90DC2AF32A0A6A58001F50A0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AA82A0A6A58001F50A0 /* NetworkService.swift */; };
-		90DC2AF42A0A6A58001F50A0 /* BodyEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AAA2A0A6A58001F50A0 /* BodyEncoding.swift */; };
-		90DC2AF52A0A6A58001F50A0 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AAB2A0A6A58001F50A0 /* Requestable.swift */; };
-		90DC2AF62A0A6A58001F50A0 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AAC2A0A6A58001F50A0 /* HTTPMethod.swift */; };
-		90DC2AF72A0A6A58001F50A0 /* ResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AAD2A0A6A58001F50A0 /* ResponseDecoder.swift */; };
-		90DC2AF82A0A6A58001F50A0 /* APIDataNetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AAE2A0A6A58001F50A0 /* APIDataNetworkConfiguration.swift */; };
-		90DC2AF92A0A6A58001F50A0 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AAF2A0A6A58001F50A0 /* Endpoint.swift */; };
-		90DC2AFA2A0A6A58001F50A0 /* NetworkSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AB02A0A6A58001F50A0 /* NetworkSessionManager.swift */; };
-		90DC2AFB2A0A6A58001F50A0 /* DataTransferError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AB22A0A6A58001F50A0 /* DataTransferError.swift */; };
-		90DC2AFC2A0A6A58001F50A0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AB32A0A6A58001F50A0 /* NetworkError.swift */; };
-		90DC2AFD2A0A6A58001F50A0 /* DefaultLecturesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AB52A0A6A58001F50A0 /* DefaultLecturesRepository.swift */; };
-		90DC2AFE2A0A6A58001F50A0 /* DefaultMemoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AB62A0A6A58001F50A0 /* DefaultMemoRepository.swift */; };
-		90DC2AFF2A0A6A58001F50A0 /* DefaultTimeTableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AB72A0A6A58001F50A0 /* DefaultTimeTableRepository.swift */; };
 		90DC2B002A0A6A58001F50A0 /* MemoResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2AB92A0A6A58001F50A0 /* MemoResponseDTO+Mapping.swift */; };
 		90DC2B012A0A6A58001F50A0 /* LecturesResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2ABA2A0A6A58001F50A0 /* LecturesResponseDTO+Mapping.swift */; };
 		90DC2B022A0A6A58001F50A0 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DC2ABC2A0A6A58001F50A0 /* APIEndpoints.swift */; };
@@ -129,6 +129,20 @@
 		901D8F8B2A0885A90012F607 /* JZCalendarWeekView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JZCalendarWeekView.xcodeproj; path = JZCalendarWeekView/JZCalendarWeekView.xcodeproj; sourceTree = "<group>"; };
 		901D8F972A088ABD0012F607 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		901D8FD62A08EBCA0012F607 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		9023D1152A0A753100235877 /* DataTransferService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
+		9023D1162A0A753100235877 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		9023D1182A0A753100235877 /* BodyEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyEncoding.swift; sourceTree = "<group>"; };
+		9023D1192A0A753100235877 /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
+		9023D11A2A0A753100235877 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		9023D11B2A0A753100235877 /* ResponseDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseDecoder.swift; sourceTree = "<group>"; };
+		9023D11C2A0A753100235877 /* APIDataNetworkConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDataNetworkConfiguration.swift; sourceTree = "<group>"; };
+		9023D11D2A0A753100235877 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		9023D11E2A0A753100235877 /* NetworkSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSessionManager.swift; sourceTree = "<group>"; };
+		9023D1202A0A753100235877 /* DataTransferError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTransferError.swift; sourceTree = "<group>"; };
+		9023D1212A0A753100235877 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		9023D1232A0A753100235877 /* DefaultLecturesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultLecturesRepository.swift; sourceTree = "<group>"; };
+		9023D1242A0A753100235877 /* DefaultMemoRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultMemoRepository.swift; sourceTree = "<group>"; };
+		9023D1252A0A753100235877 /* DefaultTimeTableRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTimeTableRepository.swift; sourceTree = "<group>"; };
 		9089E78A2A07281300A83580 /* TimeTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9089E78D2A07281300A83580 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9089E78F2A07281300A83580 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,20 +182,6 @@
 		90DC2A9F2A0A6A58001F50A0 /* MainNavigationBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationBarView.swift; sourceTree = "<group>"; };
 		90DC2AA12A0A6A58001F50A0 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		90DC2AA22A0A6A58001F50A0 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
-		90DC2AA72A0A6A58001F50A0 /* DataTransferService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
-		90DC2AA82A0A6A58001F50A0 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		90DC2AAA2A0A6A58001F50A0 /* BodyEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyEncoding.swift; sourceTree = "<group>"; };
-		90DC2AAB2A0A6A58001F50A0 /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
-		90DC2AAC2A0A6A58001F50A0 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		90DC2AAD2A0A6A58001F50A0 /* ResponseDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseDecoder.swift; sourceTree = "<group>"; };
-		90DC2AAE2A0A6A58001F50A0 /* APIDataNetworkConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDataNetworkConfiguration.swift; sourceTree = "<group>"; };
-		90DC2AAF2A0A6A58001F50A0 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		90DC2AB02A0A6A58001F50A0 /* NetworkSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSessionManager.swift; sourceTree = "<group>"; };
-		90DC2AB22A0A6A58001F50A0 /* DataTransferError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTransferError.swift; sourceTree = "<group>"; };
-		90DC2AB32A0A6A58001F50A0 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		90DC2AB52A0A6A58001F50A0 /* DefaultLecturesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultLecturesRepository.swift; sourceTree = "<group>"; };
-		90DC2AB62A0A6A58001F50A0 /* DefaultMemoRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultMemoRepository.swift; sourceTree = "<group>"; };
-		90DC2AB72A0A6A58001F50A0 /* DefaultTimeTableRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTimeTableRepository.swift; sourceTree = "<group>"; };
 		90DC2AB92A0A6A58001F50A0 /* MemoResponseDTO+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MemoResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
 		90DC2ABA2A0A6A58001F50A0 /* LecturesResponseDTO+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LecturesResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
 		90DC2ABC2A0A6A58001F50A0 /* APIEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
@@ -217,9 +217,9 @@
 		901D8F3B2A07677B0012F607 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				901D8F362A0767450012F607 /* ConnectionError.swift */,
-				901D8F6E2A0794060012F607 /* Extensions */,
 				901D8F3E2A0767AA0012F607 /* AnyTask */,
+				901D8F6E2A0794060012F607 /* Extensions */,
+				901D8F362A0767450012F607 /* ConnectionError.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -261,6 +261,61 @@
 				901D8F932A0885A90012F607 /* JZCalendarWeekViewTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9023D1102A0A74D400235877 /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+				90DC2AB92A0A6A58001F50A0 /* MemoResponseDTO+Mapping.swift */,
+				90DC2ABA2A0A6A58001F50A0 /* LecturesResponseDTO+Mapping.swift */,
+				90DC2ABD2A0A6A58001F50A0 /* MemoRequestDTO+Mapping.swift */,
+				90DC2ABE2A0A6A58001F50A0 /* TimeTableResponseDTO+Mapping.swift */,
+			);
+			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		9023D1142A0A753100235877 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9023D1152A0A753100235877 /* DataTransferService.swift */,
+				9023D11E2A0A753100235877 /* NetworkSessionManager.swift */,
+				9023D1162A0A753100235877 /* NetworkService.swift */,
+				9023D1172A0A753100235877 /* Endpoint */,
+				9023D11F2A0A753100235877 /* Error */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9023D1172A0A753100235877 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				9023D1182A0A753100235877 /* BodyEncoding.swift */,
+				9023D1192A0A753100235877 /* Requestable.swift */,
+				9023D11A2A0A753100235877 /* HTTPMethod.swift */,
+				9023D11B2A0A753100235877 /* ResponseDecoder.swift */,
+				9023D11C2A0A753100235877 /* APIDataNetworkConfiguration.swift */,
+				9023D11D2A0A753100235877 /* Endpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		9023D11F2A0A753100235877 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				9023D1202A0A753100235877 /* DataTransferError.swift */,
+				9023D1212A0A753100235877 /* NetworkError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		9023D1222A0A753100235877 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				9023D1232A0A753100235877 /* DefaultLecturesRepository.swift */,
+				9023D1242A0A753100235877 /* DefaultMemoRepository.swift */,
+				9023D1252A0A753100235877 /* DefaultTimeTableRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		9089E7812A07281300A83580 = {
@@ -325,12 +380,12 @@
 		90DC2A6E2A0A6A58001F50A0 /* TimeTableScene */ = {
 			isa = PBXGroup;
 			children = (
-				90DC2A6F2A0A6A58001F50A0 /* LectureDetail */,
-				90DC2A772A0A6A58001F50A0 /* Utils */,
-				90DC2A802A0A6A58001F50A0 /* Search */,
-				90DC2A8A2A0A6A58001F50A0 /* Memo */,
-				90DC2A922A0A6A58001F50A0 /* Main */,
 				90DC2AA02A0A6A58001F50A0 /* Flow */,
+				90DC2A922A0A6A58001F50A0 /* Main */,
+				90DC2A802A0A6A58001F50A0 /* Search */,
+				90DC2A6F2A0A6A58001F50A0 /* LectureDetail */,
+				90DC2A8A2A0A6A58001F50A0 /* Memo */,
+				90DC2A772A0A6A58001F50A0 /* Utils */,
 			);
 			path = TimeTableScene;
 			sourceTree = "<group>";
@@ -338,9 +393,9 @@
 		90DC2A6F2A0A6A58001F50A0 /* LectureDetail */ = {
 			isa = PBXGroup;
 			children = (
+				90DC2A752A0A6A58001F50A0 /* View */,
 				90DC2A702A0A6A58001F50A0 /* ViewModel */,
 				90DC2A742A0A6A58001F50A0 /* LectureDetailViewController.swift */,
-				90DC2A752A0A6A58001F50A0 /* View */,
 			);
 			path = LectureDetail;
 			sourceTree = "<group>";
@@ -373,22 +428,22 @@
 		90DC2A772A0A6A58001F50A0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				90DC2A792A0A6A58001F50A0 /* BaseView */,
 				90DC2A782A0A6A58001F50A0 /* ReusableCells.swift */,
-				90DC2A792A0A6A58001F50A0 /* View */,
 				90DC2A7E2A0A6A58001F50A0 /* LectureInfoView.swift */,
 				90DC2A7F2A0A6A58001F50A0 /* AlertControllerBulider.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		90DC2A792A0A6A58001F50A0 /* View */ = {
+		90DC2A792A0A6A58001F50A0 /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
 				90DC2A7A2A0A6A58001F50A0 /* BaseViewController.swift */,
 				90DC2A7B2A0A6A58001F50A0 /* Protocol */,
 				90DC2A7D2A0A6A58001F50A0 /* BaseView.swift */,
 			);
-			path = View;
+			path = BaseView;
 			sourceTree = "<group>";
 		};
 		90DC2A7B2A0A6A58001F50A0 /* Protocol */ = {
@@ -402,9 +457,9 @@
 		90DC2A802A0A6A58001F50A0 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				90DC2A862A0A6A58001F50A0 /* View */,
 				90DC2A812A0A6A58001F50A0 /* ViewModel */,
 				90DC2A852A0A6A58001F50A0 /* SearchViewController.swift */,
-				90DC2A862A0A6A58001F50A0 /* View */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -439,9 +494,9 @@
 		90DC2A8A2A0A6A58001F50A0 /* Memo */ = {
 			isa = PBXGroup;
 			children = (
+				90DC2A902A0A6A58001F50A0 /* View */,
 				90DC2A8B2A0A6A58001F50A0 /* ViewModel */,
 				90DC2A8F2A0A6A58001F50A0 /* MemoViewController.swift */,
-				90DC2A902A0A6A58001F50A0 /* View */,
 			);
 			path = Memo;
 			sourceTree = "<group>";
@@ -474,9 +529,9 @@
 		90DC2A922A0A6A58001F50A0 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				90DC2A982A0A6A58001F50A0 /* View */,
 				90DC2A932A0A6A58001F50A0 /* ViewModel */,
 				90DC2A972A0A6A58001F50A0 /* MainViewController.swift */,
-				90DC2A982A0A6A58001F50A0 /* View */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -531,80 +586,17 @@
 		90DC2AA32A0A6A58001F50A0 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
-				90DC2AA42A0A6A58001F50A0 /* Network */,
+				9023D1222A0A753100235877 /* Repositories */,
+				9023D1142A0A753100235877 /* Network */,
 			);
 			path = Infrastructure;
-			sourceTree = "<group>";
-		};
-		90DC2AA42A0A6A58001F50A0 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				90DC2AA52A0A6A58001F50A0 /* Infrastructure */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		90DC2AA52A0A6A58001F50A0 /* Infrastructure */ = {
-			isa = PBXGroup;
-			children = (
-				90DC2AA62A0A6A58001F50A0 /* Network */,
-				90DC2AB42A0A6A58001F50A0 /* Repositories */,
-			);
-			path = Infrastructure;
-			sourceTree = "<group>";
-		};
-		90DC2AA62A0A6A58001F50A0 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				90DC2AA72A0A6A58001F50A0 /* DataTransferService.swift */,
-				90DC2AA82A0A6A58001F50A0 /* NetworkService.swift */,
-				90DC2AA92A0A6A58001F50A0 /* Endpoint */,
-				90DC2AB02A0A6A58001F50A0 /* NetworkSessionManager.swift */,
-				90DC2AB12A0A6A58001F50A0 /* Error */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		90DC2AA92A0A6A58001F50A0 /* Endpoint */ = {
-			isa = PBXGroup;
-			children = (
-				90DC2AAA2A0A6A58001F50A0 /* BodyEncoding.swift */,
-				90DC2AAB2A0A6A58001F50A0 /* Requestable.swift */,
-				90DC2AAC2A0A6A58001F50A0 /* HTTPMethod.swift */,
-				90DC2AAD2A0A6A58001F50A0 /* ResponseDecoder.swift */,
-				90DC2AAE2A0A6A58001F50A0 /* APIDataNetworkConfiguration.swift */,
-				90DC2AAF2A0A6A58001F50A0 /* Endpoint.swift */,
-			);
-			path = Endpoint;
-			sourceTree = "<group>";
-		};
-		90DC2AB12A0A6A58001F50A0 /* Error */ = {
-			isa = PBXGroup;
-			children = (
-				90DC2AB22A0A6A58001F50A0 /* DataTransferError.swift */,
-				90DC2AB32A0A6A58001F50A0 /* NetworkError.swift */,
-			);
-			path = Error;
-			sourceTree = "<group>";
-		};
-		90DC2AB42A0A6A58001F50A0 /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				90DC2AB52A0A6A58001F50A0 /* DefaultLecturesRepository.swift */,
-				90DC2AB62A0A6A58001F50A0 /* DefaultMemoRepository.swift */,
-				90DC2AB72A0A6A58001F50A0 /* DefaultTimeTableRepository.swift */,
-			);
-			path = Repositories;
 			sourceTree = "<group>";
 		};
 		90DC2AB82A0A6A58001F50A0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				90DC2AB92A0A6A58001F50A0 /* MemoResponseDTO+Mapping.swift */,
-				90DC2ABA2A0A6A58001F50A0 /* LecturesResponseDTO+Mapping.swift */,
 				90DC2ABB2A0A6A58001F50A0 /* Network */,
-				90DC2ABD2A0A6A58001F50A0 /* MemoRequestDTO+Mapping.swift */,
-				90DC2ABE2A0A6A58001F50A0 /* TimeTableResponseDTO+Mapping.swift */,
+				9023D1102A0A74D400235877 /* DataMapping */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -620,9 +612,9 @@
 		90DC2ABF2A0A6A58001F50A0 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				90DC2ACF2A0A6A58001F50A0 /* Entities */,
 				90DC2AC02A0A6A58001F50A0 /* Repositories */,
 				90DC2AC42A0A6A58001F50A0 /* UseCases */,
-				90DC2ACF2A0A6A58001F50A0 /* Entities */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -788,21 +780,23 @@
 				90DC2B092A0A6A58001F50A0 /* EnrollMemoUseCase.swift in Sources */,
 				90DC2B012A0A6A58001F50A0 /* LecturesResponseDTO+Mapping.swift in Sources */,
 				90DC2B032A0A6A58001F50A0 /* MemoRequestDTO+Mapping.swift in Sources */,
-				90DC2AFD2A0A6A58001F50A0 /* DefaultLecturesRepository.swift in Sources */,
 				90DC2AE42A0A6A58001F50A0 /* DefaultMemoViewModel.swift in Sources */,
+				9023D12C2A0A753100235877 /* APIDataNetworkConfiguration.swift in Sources */,
 				901D8F372A0767450012F607 /* ConnectionError.swift in Sources */,
 				90DC2AED2A0A6A58001F50A0 /* MainHeaderView.swift in Sources */,
 				901D8F7C2A07CC8C0012F607 /* Date+Extensions.swift in Sources */,
 				90DC2AF02A0A6A58001F50A0 /* AppCoordinator.swift in Sources */,
-				90DC2AF72A0A6A58001F50A0 /* ResponseDecoder.swift in Sources */,
+				9023D1292A0A753100235877 /* Requestable.swift in Sources */,
 				901D8F702A0794110012F607 /* Color+Extensions.swift in Sources */,
 				90DC2B082A0A6A58001F50A0 /* DeleteMemoUseCase.swift in Sources */,
 				90DC2AD62A0A6A58001F50A0 /* LectureDetailView.swift in Sources */,
+				9023D12A2A0A753100235877 /* HTTPMethod.swift in Sources */,
+				9023D1272A0A753100235877 /* NetworkService.swift in Sources */,
 				90DC2AD82A0A6A58001F50A0 /* BaseViewController.swift in Sources */,
-				90DC2AFB2A0A6A58001F50A0 /* DataTransferError.swift in Sources */,
 				90DC2B112A0A6A58001F50A0 /* MemoEntity.swift in Sources */,
 				90DC2B002A0A6A58001F50A0 /* MemoResponseDTO+Mapping.swift in Sources */,
 				90DC2B022A0A6A58001F50A0 /* APIEndpoints.swift in Sources */,
+				9023D1312A0A753100235877 /* DefaultLecturesRepository.swift in Sources */,
 				90DC2B0D2A0A6A58001F50A0 /* EnrollTimeTableUseCase.swift in Sources */,
 				90DC2ADC2A0A6A58001F50A0 /* AlertControllerBulider.swift in Sources */,
 				90DC2A5C2A0A34B3001F50A0 /* UIView+Extensions.swift in Sources */,
@@ -810,35 +804,36 @@
 				90DC2B102A0A6A58001F50A0 /* LectureEntity.swift in Sources */,
 				90DC2AD52A0A6A58001F50A0 /* LectureDetailViewController.swift in Sources */,
 				90DC2AEC2A0A6A58001F50A0 /* CalendarView.swift in Sources */,
+				9023D12B2A0A753100235877 /* ResponseDecoder.swift in Sources */,
 				90DC2B0C2A0A6A58001F50A0 /* DeleteTimeTableUseCase.swift in Sources */,
+				9023D1322A0A753100235877 /* DefaultMemoRepository.swift in Sources */,
 				901D8F982A088ABD0012F607 /* AppConfiguration.swift in Sources */,
 				90DC2B052A0A6A58001F50A0 /* TimeTableRepository.swift in Sources */,
 				90DC2AD42A0A6A58001F50A0 /* DefaultLectureDetailViewModel.swift in Sources */,
+				9023D1302A0A753100235877 /* NetworkError.swift in Sources */,
+				9023D1262A0A753100235877 /* DataTransferService.swift in Sources */,
 				90DC2AF12A0A6A58001F50A0 /* MainCoordinator.swift in Sources */,
 				90DC2AE92A0A6A58001F50A0 /* MainViewController.swift in Sources */,
 				901D8F3D2A0767A10012F607 /* AnyCancellableTask.swift in Sources */,
-				90DC2AF52A0A6A58001F50A0 /* Requestable.swift in Sources */,
-				90DC2AFF2A0A6A58001F50A0 /* DefaultTimeTableRepository.swift in Sources */,
-				90DC2AF42A0A6A58001F50A0 /* BodyEncoding.swift in Sources */,
 				90DC2AE72A0A6A58001F50A0 /* DefaultMainViewModel.swift in Sources */,
+				9023D1282A0A753100235877 /* BodyEncoding.swift in Sources */,
 				90DC2B042A0A6A58001F50A0 /* TimeTableResponseDTO+Mapping.swift in Sources */,
-				90DC2AF82A0A6A58001F50A0 /* APIDataNetworkConfiguration.swift in Sources */,
+				9023D12D2A0A753100235877 /* Endpoint.swift in Sources */,
 				9089E78E2A07281300A83580 /* AppDelegate.swift in Sources */,
+				9023D1332A0A753100235877 /* DefaultTimeTableRepository.swift in Sources */,
 				90DC2ADE2A0A6A58001F50A0 /* DefaultSearchViewModel.swift in Sources */,
 				90DC2ADF2A0A6A58001F50A0 /* SearchViewController.swift in Sources */,
 				90DC2AE62A0A6A58001F50A0 /* MemoView.swift in Sources */,
 				90DC2AE52A0A6A58001F50A0 /* MemoViewController.swift in Sources */,
+				9023D12F2A0A753100235877 /* DataTransferError.swift in Sources */,
 				90DC2ADD2A0A6A58001F50A0 /* SearchViewModel.swift in Sources */,
 				90DC2ADB2A0A6A58001F50A0 /* LectureInfoView.swift in Sources */,
-				90DC2AFC2A0A6A58001F50A0 /* NetworkError.swift in Sources */,
 				90DC2AEA2A0A6A58001F50A0 /* CalendarCollectionViewCell.swift in Sources */,
 				90DC2AE12A0A6A58001F50A0 /* SearchView.swift in Sources */,
 				90DC2B0B2A0A6A58001F50A0 /* FetchLecturesUseCase.swift in Sources */,
 				90DC2AE32A0A6A58001F50A0 /* MemoViewModel.swift in Sources */,
-				90DC2AFA2A0A6A58001F50A0 /* NetworkSessionManager.swift in Sources */,
 				90DC2AE82A0A6A58001F50A0 /* MainViewModel.swift in Sources */,
 				901D8FD72A08EBCA0012F607 /* Array+Extensions.swift in Sources */,
-				90DC2AFE2A0A6A58001F50A0 /* DefaultMemoRepository.swift in Sources */,
 				90DC2AEB2A0A6A58001F50A0 /* MemoTitleView.swift in Sources */,
 				901D8F3A2A07676C0012F607 /* AnyCancelTaskBag.swift in Sources */,
 				90DC2AEE2A0A6A58001F50A0 /* MainView.swift in Sources */,
@@ -847,16 +842,13 @@
 				901D8F802A07D7F10012F607 /* String+Extensions.swift in Sources */,
 				90DC2AE22A0A6A58001F50A0 /* SearchBarView.swift in Sources */,
 				90DC2B0A2A0A6A58001F50A0 /* FetchMemosUseCase.swift in Sources */,
-				90DC2AF32A0A6A58001F50A0 /* NetworkService.swift in Sources */,
-				90DC2AF22A0A6A58001F50A0 /* DataTransferService.swift in Sources */,
 				90DC2B0E2A0A6A58001F50A0 /* FetchTimeTableUseCase.swift in Sources */,
 				90DC2B072A0A6A58001F50A0 /* MemoRepository.swift in Sources */,
 				90DC2B062A0A6A58001F50A0 /* LecturesRepository.swift in Sources */,
-				90DC2AF62A0A6A58001F50A0 /* HTTPMethod.swift in Sources */,
 				90DC2AD72A0A6A58001F50A0 /* ReusableCells.swift in Sources */,
 				90DC2B0F2A0A6A58001F50A0 /* CalendarEvent.swift in Sources */,
+				9023D12E2A0A753100235877 /* NetworkSessionManager.swift in Sources */,
 				90DC2AD92A0A6A58001F50A0 /* BaseProtocol.swift in Sources */,
-				90DC2AF92A0A6A58001F50A0 /* Endpoint.swift in Sources */,
 				9089E7902A07281300A83580 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

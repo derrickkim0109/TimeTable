@@ -119,8 +119,54 @@ final class LectureDetailViewController: BaseViewController<LectureDetailViewMod
             lectureDetailView.memoStackView.isHidden = false
 
             configureNavigationItems()
-            lectureDetailView.makeMemoViews(memoModel ?? [])
+            makeMemoViews(memoModel ?? [])
         }
+    }
+
+    func makeMemoViews(_ memos: [MemoEntity]) {
+        for (index, memo) in memos.enumerated() {
+            let title = memo.title
+            let image = UIImage(systemName: memo.type.imageName)
+
+            let memoTitleView = MemoTitleView()
+            memoTitleView.memoIconImageView.tintColor = .black
+            memoTitleView.memoTitleLabel.font = UIFont.systemFont(ofSize: 20)
+
+            memoTitleView.memoIconImageView.image = image
+            memoTitleView.memoTitleLabel.text = memo.type.korean + " " + title
+
+            let deleteButton = UIButton()
+            deleteButton.imageView?.tintColor = .systemGray3
+            deleteButton.addTarget(self,
+                                   action: #selector(didTapDeleteMemoButton(_:)),
+                                   for: .touchUpInside)
+            deleteButton.setImage(UIImage(systemName: "trash"),
+                                  for: .normal)
+
+            let deleteButtonStandardPriority = deleteButton.contentHuggingPriority(
+                for: .horizontal)
+            deleteButton.setContentHuggingPriority(
+                deleteButtonStandardPriority + 1,
+                for: .horizontal)
+            deleteButton.tag = index
+
+            lectureDetailView.memoStackView.addArrangedSubview(makeStackView(memoTitleView,
+                                                                             deleteButton))
+
+            NSLayoutConstraint.activate([
+                memoTitleView.memoIconImageView.widthAnchor.constraint(equalToConstant: 25)
+            ])
+        }
+    }
+
+    private func makeStackView(_ memoTitleView: MemoTitleView,
+                          _ deleteButton: UIButton) -> UIStackView {
+        let stackView = UIStackView(arrangedSubviews: [memoTitleView,
+                                                       deleteButton])
+        stackView.axis = .horizontal
+        stackView.alignment = .fill
+        stackView.distribution = .fill
+        return stackView
     }
 
     func didEnrollTimeTable() {
@@ -254,6 +300,15 @@ final class LectureDetailViewController: BaseViewController<LectureDetailViewMod
                     .present()
             }
         }.store(in: bag)
+    }
+
+    @objc private func didTapDeleteMemoButton(_ sender: UIButton) {
+        guard let memos = memoModel else {
+            return
+        }
+
+        memoModel?.remove(at: sender.tag)
+        didDeleteMemo(memos[sender.tag])
     }
 
     @objc private func didTapTimeTableEnrollment(_ sender: UIButton) {
